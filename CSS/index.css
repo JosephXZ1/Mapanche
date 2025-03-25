@@ -1,0 +1,95 @@
+/*
+.mainSectionTitles::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.538);
+    z-index: 1;
+}
+
+.mainSectionTitles
+{
+    width: 100%;
+    height: 47rem;
+    position: absolute;
+    top: 0;
+
+    background-image: url("Panaderia1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: #fff;
+    z-index: 2;
+}
+
+.mainSectionTitles h1
+{
+    font-size: 3rem;
+    font-family: "Prata", serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0 auto;
+    padding-top: 10rem;
+    text-align: center;
+    z-index: 3;
+}
+*/
+
+.mainSectionTitles
+{
+    width: 100%;
+    height: 47rem;
+    position: relative; /* 🔹 Esto soluciona el problema */
+    
+    background-image: url("Panaderia1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: #fff;
+    z-index: 2; /* Asegura que el contenedor esté por encima de la capa oscura */
+}
+
+.mainSectionTitles::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.538);
+    z-index: 0; /* 🔹 Asegura que el fondo oscuro esté detrás del texto */
+}
+
+.mainSectionTitles h1, 
+.mainSectionTitles h2
+{
+    position: relative; /* 🔹 Necesario para que `z-index` funcione */
+    z-index: 2; /* 🔹 Se pone encima de `::before` */
+    text-align: center;
+}
+
+.mainSectionTitles h1
+{
+    font-size: 5rem;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding-top: 15rem;
+    text-shadow: 5px 5px 2px #260e00;
+}
+
+.mainSectionTitles h2
+{
+    font-size: 2.3rem;
+    font-family: "Prata", serif;
+    font-weight: 300;
+    margin: 1rem auto 0 auto;;
+}

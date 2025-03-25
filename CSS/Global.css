@@ -1,0 +1,262 @@
+/*
+html
+{
+    background-color: #fff9e9;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+header
+{
+    width: 97%;
+    height: 8rem;
+    background-color: #fee07c;
+    margin: 1.25rem auto;
+    padding: 1rem 2.5rem;
+    border-radius: 3rem;
+    box-sizing: border-box;
+}
+
+header a
+{
+    text-decoration: none;
+    color: #000;
+    margin: 0 1rem;
+}
+
+header nav
+{
+    line-height: 6rem;
+    float: right;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.headerTitles
+{
+    display: flex;
+    float: left;
+}
+
+.headerTitles img
+{
+    width: 100px;
+    margin-right: 1rem;
+}
+
+.headerTitles a
+{
+    font-size: 2rem;
+    font-family: "Prata", serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 2rem auto;
+}
+*/
+
+html
+{
+    background-color: #fff9e9;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+}
+
+/* - - - - - - - - - - HEADER - - - - - - - - - - */
+
+header
+{
+    width: 97%;
+    height: 8rem;
+    background-color: #fee07c;
+    margin: 1.25rem auto;
+    padding: 1rem 2.5rem;
+    border-radius: 3rem;
+    box-sizing: border-box;
+
+    display: flex; /* Usamos flexbox para organizar el contenido */
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Separa el título y la navegación */
+
+    /*Centrado y posicionamiento fijo*/
+    position: fixed;
+    top: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+header a
+{
+    text-decoration: none;
+    color: #000;
+    margin: 0 0.1rem;
+    transition: all ease 0.170s;
+}
+
+header a:hover
+{
+    color: #ca580c;
+}    
+
+header nav
+{
+    display: flex; /* Hace que los enlaces estén en línea */
+    gap: 2rem; /* Espaciado uniforme entre enlaces */
+    font-size: 1.7vw;
+    font-weight: 400;
+    align-items: center;
+}
+
+header nav a img
+{
+    width: 60px;  /* Ajusta el tamaño de la imagen del perfil */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+}
+
+header nav a:last-child
+{
+    height: 60px;
+}
+
+
+.headerTitles
+{
+    display: flex;
+    align-items: center; /* Centra imagen y texto verticalmente */
+}
+
+.headerTitles img
+{
+    width: 100px;
+    margin-right: 1rem;
+}
+
+.headerTitles a
+{
+    font-size: 2.2vw;
+    font-family: "Prata", serif;
+    font-weight: 300;
+}
+
+
+/* - - - - - - - - - - FOOTER - - - - - - - - - - */
+
+footer
+{
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    background-color: #fee07c;
+    padding: 2.5rem 0 2.5rem 2.5rem;
+    display: flex;
+    align-items: stretch;
+    gap: 8rem;
+}
+
+footer h3
+{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+footer img
+{
+    max-width: 15vw; /* Control más preciso */
+    min-width: 10vw;
+    transition: filter 0.2s ease-in-out;
+}
+
+footer img[src="Multimedia/MapancheLog.png"]
+{
+    width: 20vw;
+    height: 15vw;
+}
+
+footer a
+{
+    line-height: 2.3;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: all ease 0.1s;
+}
+
+footer a:hover
+{
+    color: #ca580c;
+}
+
+footer ul, footer li
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerSocialGroup
+{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 0.5rem; /* Ajustado para mantener espacio sin excesos */
+}
+
+.footerSocial img
+{
+    width: 3vw;
+    min-width: 2vw;
+}
+
+/*Apartado: Todos estos son para el cambio de color de los logos*/
+.footerSocial a:hover img[src="Multimedia/Facebook.png"]
+{
+    filter: invert(37%) sepia(78%) saturate(2624%) hue-rotate(200deg) brightness(99%) contrast(93%);
+}
+
+.footerSocial a:hover img[src="Multimedia/Instagram.png"]
+{
+    filter: invert(24%) sepia(81%) saturate(2033%) hue-rotate(298deg) brightness(92%) contrast(88%);
+}
+
+.footerSocial a:hover img[src="Multimedia/Twitter.png"]
+{
+    filter: invert(45%) sepia(96%) saturate(465%) hue-rotate(155deg) brightness(99%) contrast(106%);
+}
+
+.footerSocial a:hover img[src="Multimedia/YT.png"]
+{
+    filter: invert(18%) sepia(66%) saturate(4061%) hue-rotate(354deg) brightness(103%) contrast(87%);
+}
+
+.footerSocial a:hover img[src="Multimedia/Whatsapp.png"]
+{
+    filter: invert(71%) sepia(97%) saturate(392%) hue-rotate(68deg) brightness(93%) contrast(86%);
+}
+
+.Whatsapp
+{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.copyright
+{
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    background-color: #ca580c;
+}
+
+.copyright p
+{
+    margin: 0;
+    color: #fff;
+    font-weight: 350;
+}
