@@ -1,62 +1,3 @@
-/*
-html
-{
-    background-color: #fff9e9;
-    font-size: 16px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
-
-
-header
-{
-    width: 97%;
-    height: 8rem;
-    background-color: #fee07c;
-    margin: 1.25rem auto;
-    padding: 1rem 2.5rem;
-    border-radius: 3rem;
-    box-sizing: border-box;
-}
-
-header a
-{
-    text-decoration: none;
-    color: #000;
-    margin: 0 1rem;
-}
-
-header nav
-{
-    line-height: 6rem;
-    float: right;
-    font-size: 1.6rem;
-    font-weight: 400;
-}
-
-.headerTitles
-{
-    display: flex;
-    float: left;
-}
-
-.headerTitles img
-{
-    width: 100px;
-    margin-right: 1rem;
-}
-
-.headerTitles a
-{
-    font-size: 2rem;
-    font-family: "Prata", serif;
-    font-weight: 300;
-    font-style: normal;
-    margin: 2rem auto;
-}
-*/
-
 html
 {
     background-color: #fff9e9;
@@ -70,9 +11,11 @@ html
 header
 {
     width: 97%;
-    height: 8rem;
+    height: 26vh;
+    min-height: 5.625rem;
+    max-height: 7.7rem;
     background-color: #fee07c;
-    margin: 1.25rem auto;
+    margin: 0 auto;
     padding: 1rem 2.5rem;
     border-radius: 3rem;
     box-sizing: border-box;
@@ -106,7 +49,7 @@ header nav
 {
     display: flex; /* Hace que los enlaces estén en línea */
     gap: 2rem; /* Espaciado uniforme entre enlaces */
-    font-size: 1.7vw;
+    font-size: 1.9rem;
     font-weight: 400;
     align-items: center;
 }
@@ -137,7 +80,7 @@ header nav a:last-child
 
 .headerTitles a
 {
-    font-size: 2.2vw;
+    font-size: 2.2rem;
     font-family: "Prata", serif;
     font-weight: 300;
 }
@@ -209,7 +152,8 @@ footer ul, footer li
 .footerSocial img
 {
     width: 3vw;
-    min-width: 2vw;
+    min-width: 10px;
+    max-width: 45px;
 }
 
 /*Apartado: Todos estos son para el cambio de color de los logos*/
