@@ -1,60 +1,16 @@
-/*
-.mainSectionTitles::before
-{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.538);
-    z-index: 1;
-}
-
 .mainSectionTitles
 {
     width: 100%;
-    height: 47rem;
-    position: absolute;
-    top: 0;
-
-    background-image: url("Panaderia1.jpg");
+    height: 50vw;
+    position: relative;
+    background-image: url("../Multimedia/Panaderia1.jpg"); /*Cambiar la URL por '../Multimedia/Panaderia1.jpg' ya que VS Code no visualiza bien los archivos de rutas por niveles*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     color: #fff;
     z-index: 2;
 }
 
-.mainSectionTitles h1
-{
-    font-size: 3rem;
-    font-family: "Prata", serif;
-    font-weight: 300;
-    font-style: normal;
-    margin: 0 auto;
-    padding-top: 10rem;
-    text-align: center;
-    z-index: 3;
-}
-*/
-
-.mainSectionTitles
-{
-    width: 100%;
-    height: 47rem;
-    position: relative; /* 🔹 Esto soluciona el problema */
-    
-    background-image: url("Panaderia1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    color: #fff;
-    z-index: 2; /* Asegura que el contenedor esté por encima de la capa oscura */
-}
-
 .mainSectionTitles::before
 {
     content: "";
@@ -64,14 +20,14 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.538);
-    z-index: 0; /* 🔹 Asegura que el fondo oscuro esté detrás del texto */
+    z-index: 0;
 }
 
 .mainSectionTitles h1, 
 .mainSectionTitles h2
 {
-    position: relative; /* 🔹 Necesario para que `z-index` funcione */
-    z-index: 2; /* 🔹 Se pone encima de `::before` */
+    position: relative;
+    z-index: 2;
     text-align: center;
 }
 
@@ -82,7 +38,7 @@
     font-weight: 400;
     text-transform: uppercase;
     margin: 0 auto;
-    padding-top: 15rem;
+    padding-top: 15vw;
     text-shadow: 5px 5px 2px #260e00;
 }
 
@@ -92,4 +48,389 @@
     font-family: "Prata", serif;
     font-weight: 300;
     margin: 1rem auto 0 auto;;
+}
+
+/* - - - - - - - - - -      SLIDER DE PANES       - - - - - - - - - - */
+*
+{
+    box-sizing: border-box;
+}
+
+/*Contenedor completo*/
+.slider, .esp1
+{
+    margin: 7rem 0;
+}
+
+.slider h2
+{
+    margin: 0 0 0.5rem 0;
+    text-align: center;
+    font-family: "Prata", serif;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.slider-container
+{
+    width: 100%;
+    height: 68vh;
+    max-height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.5rem 0 0 0;
+    overflow: hidden; /*Oculta desbordamiento*/
+}
+
+/*Modificador de tarjetas*/
+.slider-container a
+{
+    display: flex; /*Esto asegura que el contenido esté alineado correctamente*/
+    flex-direction: column; /*Esto alinea el h3 y p verticalmente*/
+    margin:0 2rem;
+    padding: 2rem;
+    height: 45vh;
+    min-height: 417px;
+    max-width: 275px;
+    text-align: center;
+    text-decoration: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px transparent;
+
+    transform: scale(1);
+    transition: all ease 0.5s;
+
+    position: relative;
+}
+
+.slider-container a::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 1rem;
+}
+
+.slider-container a:hover
+{
+    transform: scale(1.1);
+    box-shadow: 0px 8px 7px #000;
+}
+
+.slider-container a:hover::before
+{
+    background-color: #00000068;
+    z-index: 1;
+}
+
+/*Modificadores de texto*/
+.slider-container a h3, .slider-container a p
+{
+    color: transparent;
+    text-shadow: 2px 2px 2px transparent;
+    transition: all ease 0.3s;
+    margin: 0;
+    z-index: 3;
+}
+
+.slider-container a:hover h3, .slider-container a:hover p
+{
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.slider-container a h3
+{
+    font-size: 2.5rem;
+    font-family: "Prata", serif;
+    font-weight: 500;
+}
+
+.slider-container a p
+{
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    font-weight: 300;
+}
+
+.dulce {background-image: url("../Multimedia/I-S-panDulce.jpg");}
+.pastel {background-image: url("../Multimedia/I-S-pasteles.jpg");}
+.galleta {background-image: url("../Multimedia/I-S-galletas.jpg");}
+.panTemp {background-image: url("../Multimedia/I-S-panTemp.jpg");}
+
+/* - - - - - - - - - -       ESPECTACULARES       - - - - - - - - - - */
+
+.esp
+{
+    display: flex;
+    width: 97%;
+    height: 75vh;
+    margin: 7rem auto;
+    background-color: #ffecab;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+
+.espImg
+{
+    display: block;
+    width: 50%;
+    text-decoration: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    position: relative; /* Necesario para que z-index funcione */
+    overflow: hidden; /* Para evitar desbordamientos */
+}
+
+.momsDay
+{
+    background-image: url("../Multimedia/I-E1-momsDay.jpg");;
+}
+
+.fav
+{
+    background-image: url("../Multimedia/I-E2-fav.jpg");
+}
+
+.espImg::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: all ease 0.5s;
+    z-index: 1; /* Debe estar en una capa baja */
+}
+
+.espImg:hover::before
+{
+    background-color: #00000068;
+}
+
+.espImg h3
+{
+    font-size: 3rem;
+    font-family: "Prata", serif;
+    font-weight: 300;
+    color: transparent;
+    text-shadow: 2px 2px 2px transparent;
+    text-align: center;
+    margin: 0;
+    transition: all ease 0.3s;
+    position: relative; /*Asegura que pueda usar z-index*/
+    z-index: 2; /*Más alto que el ::before*/
+
+    /*Estos 2 elementos son para ubicar a la centro el texto, necesario para este caso*/
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.espImg:hover h3
+{
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+}
+
+
+.esp div
+{
+    width: 50%;
+    padding: 1rem;
+    text-align: center;
+    display: flex;           /* Activa flexbox */
+    flex-direction: column;  /* Apila elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    height: 100%;            /* Asegura que use todo el alto disponible */
+}
+
+.esp div h3
+{
+    font-size: clamp(1.2rem, 2.5vw, 3rem);
+    font-family: "Prata", serif;
+    font-weight: 300;
+    text-shadow: 2px 2px 0 #ca580c;
+    margin: 0;
+}
+
+.esp p
+{
+    font-size: clamp(1rem,1.4vw,1.5rem);
+    font-weight: 370;
+}
+
+.button
+{
+    display: block;
+    background: #ff9134;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 12vw;
+    min-width: 212px;
+    border-radius: 1rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    transition: all ease 0.3s;
+}
+
+.button:hover
+{
+    background: #ca580c;
+}
+
+/* - - - - - - - - - -      NOSOTROS      - - - - - - - - - - */
+
+/*Contenedor principal*/
+.team a 
+{
+    margin: 10rem auto;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: row; /*Distribuye elementos en fila*/
+    justify-content: space-between; /*Espacio entre izquierda y derecha*/
+    align-items: center; /*Centra verticalmente*/
+    width: 97%;
+    height: 60vh;
+    border-radius: 3rem;
+    box-sizing: border-box;
+    background-image: url("fondoPrueba.jpg"); /*CAMBIAR CUANDO ESTE LA FOTO*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: none;
+    position: relative;
+}
+/*Capa de obscurescencia*/
+.team a::before 
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000083;
+    border-radius: 3rem;
+}
+/*contenedor izquierdo con el h2 y p*/
+.team div.teamIzq
+{
+    width: 50%;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.team h2 
+{
+    margin: 0;
+    font-size: 3.3rem;
+    font-family: "Prata", serif;
+    font-weight: 300;
+    text-shadow: 3px 3px 2px #000;
+}
+
+.team p 
+{
+    margin: 0.5rem 0;
+    font-size: clamp(1rem, 1.45vw, 2rem);
+    font-weight: 370;
+    text-shadow: 1px 1px 0 #000;
+}
+
+.team p span
+{
+    font-weight: 500;    
+}
+
+/*Contenedor derecho con el h3*/
+.team div.teamDer
+{
+    width: 50%;
+    position: relative;
+    text-align: center;
+}
+
+.team h3 
+{
+    font-size: 2.7rem;
+    font-family: "Prata", serif;
+    font-weight: 300;
+    color: transparent;
+    text-shadow: 2px 2px 2px transparent;
+    transition: all ease 0.3s;
+}
+
+.team a:hover h3 
+{
+    color: #fff;
+    text-shadow: 3px 3px 2px #000;
+}
+
+/* - - - - - - - - - -      CONTACTO      - - - - - - - - - - */
+.contact
+{
+    display: flex;
+    margin: 3rem auto 7rem auto;
+    width: 50%;
+    height: 10vh;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+    border-radius: 1.3rem;
+    border: 3px solid #ff9134;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.contact div, .aContact
+{
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.contact div
+{
+    background-color: #ff9134;
+    color: #fff;
+}
+
+.aContact
+{
+    background-color: transparent;
+    text-decoration: none;
+    color: #ff9134;
+    transition: all ease 0.3s;
+}
+
+.aContact:hover
+{
+    color: #fff;
+    background-color: #ff9134;
+}
+
+.contact p, .contact a
+{
+    font-size: 1.5rem;
+    margin: 0 auto;
 }
