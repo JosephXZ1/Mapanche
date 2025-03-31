@@ -1,0 +1,27 @@
+.contenedor_campos{
+    width: min(60rem , 100%); /*Utiliza el valor más pequeño*/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #f2c97b;
+}
+.campo{
+    margin: 30px;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.input_text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+.boton{
+    background-color: wheat;
+}
+.boton:hover{
+    background-color: white;
+}
+
