@@ -1,0 +1,232 @@
+/*Contenedor principal Main*/
+main
+{
+    top: 19vh;
+    align-items: flex-start;
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 0 1.5vw;
+    margin-bottom: 20vh;
+}
+
+
+/* - - - - - - - - - - CONTENEDOR IZQUIERDO DE NAVEGACIÓN - - - - - - - - - - */
+.menuNav
+{
+    width: 30%;
+    position: sticky; /* Se mantiene visible al hacer scroll */
+    top: 19vh;
+    height: auto; /* Permite que el contenido crezca según sea necesario */
+    overflow-y: auto;
+    z-index: 50;
+}
+
+summary
+{
+    background-color: transparent; /* Fondo transparente cuando está cerrado */
+    padding: 1rem 1.5rem;
+    font-family: "Prata", serif;
+    font-size: 1.5rem;
+    border-radius: 20px 20px 0 0;
+    list-style: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+summary:hover
+{
+    background-color: #fee07c;
+}
+
+/*Esto es para cuando el details está abierto, mantiene el fondo amarillo */
+details[open] > summary
+{
+    background-color: #fee07c;
+}
+
+details
+{
+    margin: 0.7rem;
+    width: 15.5vw;
+    overflow: hidden;
+    min-width: 335px;
+    border-radius: 20px;
+    transition: background-color 0.4s ease-in-out; /*Transición de apertura y cierre*/
+}
+
+details[closed]
+{
+    background-color: transparent;
+}
+
+details[open] 
+{
+    background-color: rgba(254, 224, 124, 0.506);
+    height: 47vh;
+    max-height: 335px;
+}
+
+details[open]:nth-child(3)
+{
+    height: 41vh;
+    max-height: 292px;
+}
+
+details ul
+{
+    margin: 1rem 1.5rem 0 1rem;
+    padding: 0;
+}
+
+details ul li
+{
+    list-style-type: none;
+}
+
+details ul li a 
+{   
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: color ease-in-out 0.2s;
+}
+
+details ul li a:hover
+{
+    color: #ca580c;
+}
+
+/* - - - - - - - - - - TODO EL MENÚ - - - - - - - - - - */
+.menuSection
+{
+    margin: 0;
+    width: 70%;
+    height: fit-content;
+    padding: 3vh 3vw 1vh 0;
+}
+
+.menuSection article, .mom
+{
+    margin: 7vh 0;
+    width: 100%;
+    height: 57vh;
+    max-height: 405px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.menuSection article:first-child
+{
+    margin-top: 0;
+}
+
+.row
+{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.cell, .mom a
+{
+    flex-basis: 33.333%; /* Distribución flexible */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cell::before, .mom a::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.cell:hover::before, .cell.focused::before, .mom a:hover::before
+{
+    opacity: 1;
+}
+
+.cell p, .mom p
+{
+    position: relative;
+    color: transparent;
+    font-size: 1.7vw;
+    font-weight: 500;
+    margin: 0;
+    transition: color 0.2s ease-in-out;
+}
+
+.cell:hover p, .cell.focused p, .mom:hover p
+{
+    color: #fff;
+    text-shadow: 2px 2px 3px #000;
+}
+
+
+#cinnamon{background-image: url(../Multimedia/panRol.jpg);}
+#concha{background-image: url(../Multimedia/panConcha.jpg);}
+#brown{background-image: url(../Multimedia/panBrownie.jpg);}
+#danes{background-image: url(../Multimedia/panDanes.jpg);}
+#croiss{background-image: url(../Multimedia/panCroiss.jpeg);}
+#donut{background-image: url(../Multimedia/panDonut.jpeg);}
+#RV{background-image: url(../Multimedia/pastelRV.jpg);}
+#TresL{background-image: url(../Multimedia/pastelTresL.jpg);}
+#Pay{background-image: url(../Multimedia/pastelPay.jpeg);}
+#Cheese{background-image: url(../Multimedia/pastelCheese.jpg);}
+#Choco{background-image: url(../Multimedia/pastelChoco.jpg);}
+#Tira{background-image: url(../Multimedia/pastelTiramisu.jpg);}
+#Bizc{background-image: url(../Multimedia/gallBizc.png);}
+#Chispa{background-image: url(../Multimedia/gallChispa.jpeg);}
+#Alfa{background-image: url(../Multimedia/gallAlfajor.jpg);}
+#Butter{background-image: url(../Multimedia/gallButter.jpg);}
+#Cent{background-image: url(../Multimedia/gallCentenario.jpg);}
+#Rosca{background-image: url(../Multimedia/tempRosca.jpg);}
+#Coco{background-image: url(../Multimedia/tempCoco.jpg);}
+#Kab{background-image: url(../Multimedia/tempKabocha.jpg);}
+#Muerto{background-image: url(../Multimedia/tempMuerto.jpg);}
+#Fruta{background-image: url(../Multimedia/tempFrutaSeca.jpg);}
+#Jengi{background-image: url(../Multimedia/tempJengibre.jpeg);}
+
+.menuSection h2
+{
+    margin: 15vh 0 2vh 0;
+    font-family: "Prata", serif;
+    font-size: 2.7rem;
+
+}
+.menuSection .mom
+{
+    display: flex;
+    margin: 0 0 15vh 0;
+    height: 65vh;
+    max-height: 530px;
+}
+
+.mom p
+{
+    font-size: 3vw;
+    text-shadow: transparent;
+}
+
+.mom a:nth-child(1) {background-image: url(../Multimedia/momCake.jpeg);}
+.mom a:nth-child(2) {background-image: url(../Multimedia/momCook.jpg);}
+.mom a:nth-child(3) {background-image: url(../Multimedia/momBread.jpg);}
