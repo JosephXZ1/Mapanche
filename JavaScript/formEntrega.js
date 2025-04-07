@@ -17,11 +17,9 @@ form.addEventListener("submit", function(event) {
     // Validar ambos campos
     if (!regexCorreo.test(correo)) {
         alert("El correo es inválido");
-        return;
     }
     if (!regexNumTelefono.test(numeroTel)) {
         alert("El número de teléfono es inválido");
-        return;
     }
 
     alert("Datos correctos, formulario enviado.");
