@@ -1,0 +1,141 @@
+main
+{
+    top: 21vh;
+    align-items: flex-start;
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 0 1.5vw;
+    margin-bottom: 30vh;
+    height: clamp(548px,550px,600px);;
+}
+
+/* - - - - - - - - - -  CONTENEDOR IZQUIERDO (SOLO IMÁGEN)   - - - - - - - - - - */
+.mainImg 
+{
+    margin: 0;
+    flex-basis: 45%;
+    display: flex;
+    height: 100%;
+}
+
+.mainImg img 
+{
+    width: 33vw;
+    margin: auto;
+    height: 100%;
+    z-index: 49;
+}
+
+/*Estas clases son especiales, los crea JS dinamicamente en el DOM, no estan en el HTML*/
+/*El contenedor principal que se crea dinámicamente, se puede modificar el ancho y altura, es el contenedor de la imágen*/
+.medium-zoom-overlay 
+{
+    z-index: 52;
+}
+
+/*El zoom, el borde y el fondo de la imagen, esto modifica la imágen*/
+.medium-zoom-image
+{
+    border-radius: 35px;
+    z-index: 53;
+}
+
+/* - - - - - - - - - -     CONTENEDOR DERECHO (OTRÁS IMÁGENES Y DEMÁS)     - - - - - - - - - - */
+.productInfo
+{
+    padding: 1vw 3vw 0 0;
+    box-sizing: border-box;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.productInfo h2, h3
+{
+    font-family: "prata", serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+.productInfo h2
+{
+    font-size: 2.7rem;
+}
+
+.text
+{
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 300;
+}
+
+.productInfo h3, .productInfo div p
+{
+    font-size: 2rem;
+    display: block;
+    width: 50%;
+}
+
+.productInfo div p
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.productInfo div
+{
+    display: flex;
+}
+
+.flexB
+{
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.flexB:last-child
+{
+    margin-top: 2.7rem;
+}
+
+.flexB div
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn
+{
+    width: 60%;
+    padding: 1rem;
+    background-color: #ff9134;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    transform: scale(1.05);
+}
+
+.flexB img
+{
+    width: 19vw;
+    z-index: 49;
+}
+
+.flexB:last-child
+{
+    margin-top: auto;
+}
