@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+    <link rel="icon" href="Multimedia/pan.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="CSS/Global.css">
+    <link rel="stylesheet" href="CSS/Normalize.css">
+    <link rel="stylesheet" href="CSS/form.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="form">
+        <div class="formIz">
+            <h2>¡Bienvenido de vuelta!</h2>
+            <p>Para estar atento a todo lo que tenemos para ti y seguir disfrutando de nuestros panes, inicia sesión con tu cuenta</p>
+            <a href="logIn.html">Iniciar sesión</a>
+        </div>
+        <form action="" class="formDer">
+            <h2>Crea una cuenta si no tienes una</h2>
+        
+            <div class="campos">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+" required>
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+" required>
+                </div>
+            </div>
+        
+            <div class="campos">
+                <div>
+                    <label for="correo">E-Mail</label>
+                    <input type="email" id="correo" name="correo" placeholder="Escribe tu correo" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono" pattern="[0-9]{10}" required>
+                </div>
+            </div>
+        
+            <div class="campos">
+                <div>
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Escribe tu contraseña" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                </div>
+                <div>
+                    <label for="confirmar">Confirmar Contraseña</label>
+                    <input type="password" id="confirmar" name="confirmar" placeholder="Confirma tu contraseña" required>
+                </div>
+            </div>
+        
+            <div class="check">
+                <input type="checkbox" id="checkB" required> 
+                <label for="checkB">Estoy de acuerdo con los 
+                    <a href="terms.html" target="_blank" rel="noopener noreferrer">términos y condiciones</a>
+                </label>
+            </div>
+        
+            <input type="submit" value="Crear cuenta" class="btnAccount">
+        </form>
+        
+
+    </div>
+
+    <p class="black">© Mapanche Corp. All rights reserved | Design by <img src="Multimedia/BlackWaterLogo.png" alt=""></p>
+</body>
+</html>
