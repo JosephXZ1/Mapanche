@@ -1,0 +1,33 @@
+details{
+    padding: .5 rem;
+    margin: .5rem;
+    cursor: pointer;
+}
+summary{
+    list-style: none;
+}
+summary::before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/flecha-derecha.svg'); /* Ajusta la ruta */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+details[open] summary::before{
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/flecha-arriba.svg'); /* Ajusta la ruta */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+summary:hover{
+    color: #cca833;
+}

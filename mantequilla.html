@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapanche | Pan artesanal</title>
+    <title>Galletas de mantequilla</title>
 
     <link rel="icon" href="Multimedia/pan.png" type="image/png" sizes="16x16">
-    <link rel="stylesheet" href="CSS/Global.css">
     <link rel="stylesheet" href="CSS/Normalize.css">
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/Global.css">
+    <link rel="stylesheet" href="CSS/panes.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -23,88 +24,53 @@
         <nav>
             <a href="aboutUs.html">Conocenos</a>
             <a href="menu.html">Menú</a>
-            <a href="pedidos.html">Pedidos</a>
+            <a href="#">Pedidos</a>
             <a href="perfil.html"><img src="Multimedia/Perfil.png" alt="Botono de opciones de Perfil"></a>
         </nav>
     </header>
+
     <main>
-
-        <section class="mainSection">
-            <div class="mainSectionTitles">
-                <h1>Pan recién hecho y sacado del horno</h1>
-                <h2>Descubre el verdadero sabor artesanal</h2>
-            </div>        
+        <section class="mainImg">
+            <img src="Multimedia/Menu/catGall/butter_1.jpg" alt="" title="haz click para ampliar la imagen" class="zoom">
         </section>
-
-        <section class="slider">
-            <h2>Explora nuestros diferentes tipos de pan</h2>
-            <div class="slider-container">
-                <a href="menu.html#dulce" class="dulce">
-                    <h3>Pan dulce</h3>
-                    <p>Descubre nuestra variedad de panes dulces</p>
-                </a>
-                <a href="menu.html#postre" class="pastel">
-                    <h3>Pasteles</h3>
-                    <p>Date el gusto de saciar tu paladar con un delicioso postre</p>
-                </a>
-                <a href="menu.html#gallBiz" class="galleta">
-                    <h3>Galletas y bizcochos</h3>
-                    <p>Acompaña tus mañanas con nuestras galletas y bizcochos</p>
-                </a>
-                <a href="menu.html#panTemp" class="panTemp">
-                    <h3>Pan de temporada</h3>
-                    <p>Explora los distintos panes que aparecen una vez cada cierto tiempo</p>
-                </a>
-            </div>
-        </section>
-
-        <section class="esp">
-            <a href="momsDay.html" class="espImg momsDay">
-                <h3>Ver postres disponibles</h3>
-            </a>
+        <section class="productInfo">
+            <h2>Galletas de mantequilla</h2>
+            <p class="text">Suave, crujiente y con un sabor delicado a mantequilla. Ideal para disfrutar en cualquier momento.</p>
             <div>
-                <h3>Sorpende a mamá este 10 de mayo</h3>
-                <p>Este 10 de mayo, celebra a mamá con el dulce sabor de nuestro amor en cada mordida. Descubre nuestra selección especial de postres, panes y galletas, preparados con los ingredientes más frescos y un toque de cariño que los hace irresistibles. Haz que su celebración sea inolvidable con nuestros sabores únicos.</p>
-                <a href="momsDay.html" class="button">Ver postres</a>
+                <p>Paquete de 10</p>
+                <p>Pieza individual</p>
             </div>
-        </section>
-
-        <section class="esp">
             <div>
-                <h3>¿Porqué es el favorito?</h3>
-                <p>Conoce el pan por excelencia y preferido de nuestros clientes: nuestro clásico y favorito Pan de la Casa. Hecho con una receta artesanal y un toque secreto de tradición, este pan es el acompañamiento perfecto para cualquier momento del día. Ven y descubre por qué todos hablan de él</p>
-                <a href="favorite.html" class="button">Conocelo</a>
+                <h3>$110.00</h3>
+                <h3>$10.00</h3>
             </div>
-            <a href="favorite.html" class="espImg fav">
-                <h3>Ver el postre</h3>
-            </a>
-        </section>
-
-        <article class="team">
-            <a href="blackwater.html" target="_blank" rel="noopener noreferrer">
-                <div class="teamIzq">
-                    <h2>Conoce a nuestro equipo</h2>
-                    <p>El equipo técnico detrás de cada detalle que hace posible esta experiencia digital se llama <span>BlackWater Studios</span> y Con creatividad, innovación y dedicación, diseñamos y optimizamos la página para brindarte una navegación sencilla, rápida y agradable.</p>
+            <div class="flexB">
+                <div>
+                    <button class="btn">Comprar ahora</button>
                 </div>
-                <div class="teamDer">
-                    <h3>Haz click para saber más</h3>
+                <div>
+                    <button class="btn">Comprar ahora</button>
                 </div>
-            </a>
-        </article>
-
-        <section class="contact">
-            <div>
-                <p>¿Dudas o comentarios?</p>
             </div>
-            <a href="contacto.html" class="aContact" target="_blank" rel="noopener noreferrer">
-                <p>Contactanos</p>
-            </a>
+            <div class="flexB">
+                <div><img src="Multimedia/Menu/catGall/butter_2.jpg" alt="" class="zoom"></div>
+                <div><img src="Multimedia/Menu/catGall/butter_3.jpg" alt="" class="zoom"></div>
+            </div>
         </section>
-
     </main>
+
+    <script src="JavaScript/medium-zoom.min.js"></script>
+    <script type="text/javascript">
+        mediumZoom('.zoom',
+        {
+            background: '#00000075',
+            margin: 50
+        })
+    </script>
+
     <footer>
         <img src="Multimedia/MapancheLog.png" alt="Logo de Mapanche" title="Logo de Mapanche">
-    
+
         <section class="footerSocial">
             <h3>Contactos y redes sociales</h3>
             <!--NOTA: Dado a que Mapanche solo tiene nexos en Facebook, las otras redes sociales serán de otros enlaces para que no se queden sin función aun si no tienen relación con la página-->
@@ -138,5 +104,6 @@
     <div class="copyright">
         <p>© 2025 Web-site by <img src="Multimedia/BlackWaterLogoW.png" alt="blackwater logo" title="BlackWater St Logo"> | All rights reserved | client Mapanche Corp.</p>
     </div>
+
 </body>
 </html>

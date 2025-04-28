@@ -3,7 +3,7 @@
     width: 100%;
     height: 50vw;
     position: relative;
-    background-image: url("../Multimedia/Panaderia1.jpg"); /*Cambiar la URL por '../Multimedia/Panaderia1.jpg' ya que VS Code no visualiza bien los archivos de rutas por niveles*/
+    background-image: url("../Multimedia/Index/Panaderia1.jpg"); /*Cambiar la URL por '../Multimedia/Panaderia1.jpg' ya que VS Code no visualiza bien los archivos de rutas por niveles*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,10 +162,10 @@
     font-weight: 300;
 }
 
-.dulce {background-image: url("../Multimedia/I-S-panDulce.jpg");}
-.pastel {background-image: url("../Multimedia/I-S-pasteles.jpg");}
-.galleta {background-image: url("../Multimedia/I-S-galletas.jpg");}
-.panTemp {background-image: url("../Multimedia/I-S-panTemp.jpg");}
+.dulce {background-image: url("../Multimedia/Index/I-S-panDulce.jpg");}
+.pastel {background-image: url("../Multimedia/Index/I-S-pasteles.jpg");}
+.galleta {background-image: url("../Multimedia/Index/I-S-galletas.jpg");}
+.panTemp {background-image: url("../Multimedia/Index/I-S-panTemp.jpg");}
 
 /* - - - - - - - - - -       ESPECTACULARES       - - - - - - - - - - */
 
@@ -195,12 +195,12 @@
 
 .momsDay
 {
-    background-image: url("../Multimedia/I-E1-momsDay.jpg");;
+    background-image: url("../Multimedia/Index/I-E1-momsDay.jpg");;
 }
 
 .fav
 {
-    background-image: url("../Multimedia/I-E2-fav.jpg");
+    background-image: url("../Multimedia/Index/I-E2-fav.jpg");
 }
 
 .espImg::before

@@ -182,29 +182,29 @@ details ul li a:hover
 }
 
 
-#cinnamon{background-image: url(../Multimedia/panRol.jpg);}
-#concha{background-image: url(../Multimedia/panConcha.jpg);}
-#brown{background-image: url(../Multimedia/panBrownie.jpg);}
-#danes{background-image: url(../Multimedia/panDanes.jpg);}
-#croiss{background-image: url(../Multimedia/panCroiss.jpeg);}
-#donut{background-image: url(../Multimedia/panDonut.jpeg);}
-#RV{background-image: url(../Multimedia/pastelRV.jpg);}
-#TresL{background-image: url(../Multimedia/pastelTresL.jpg);}
-#Pay{background-image: url(../Multimedia/pastelPay.jpeg);}
-#Cheese{background-image: url(../Multimedia/pastelCheese.jpg);}
-#Choco{background-image: url(../Multimedia/pastelChoco.jpg);}
-#Tira{background-image: url(../Multimedia/pastelTiramisu.jpg);}
-#Bizc{background-image: url(../Multimedia/gallBizc.png);}
-#Chispa{background-image: url(../Multimedia/gallChispa.jpeg);}
-#Alfa{background-image: url(../Multimedia/gallAlfajor.jpg);}
-#Butter{background-image: url(../Multimedia/gallButter.jpg);}
-#Cent{background-image: url(../Multimedia/gallCentenario.jpg);}
-#Rosca{background-image: url(../Multimedia/tempRosca.jpg);}
-#Coco{background-image: url(../Multimedia/tempCoco.jpg);}
-#Kab{background-image: url(../Multimedia/tempKabocha.jpg);}
-#Muerto{background-image: url(../Multimedia/tempMuerto.jpg);}
-#Fruta{background-image: url(../Multimedia/tempFrutaSeca.jpg);}
-#Jengi{background-image: url(../Multimedia/tempJengibre.jpeg);}
+#cinnamon{background-image: url(../Multimedia/menu/panRol.jpg);}
+#concha{background-image: url(../Multimedia/menu/panConcha.jpg);}
+#brown{background-image: url(../Multimedia/menu/panBrownie.jpg);}
+#danes{background-image: url(../Multimedia/menu/panDanes.jpg);}
+#croiss{background-image: url(../Multimedia/menu/panCroiss.jpeg);}
+#donut{background-image: url(../Multimedia/menu/panDonut.jpeg);}
+#RV{background-image: url(../Multimedia/menu/pastelRV.jpg);}
+#TresL{background-image: url(../Multimedia/menu/pastelTresL.jpg);}
+#Pay{background-image: url(../Multimedia/menu/pastelPay.jpeg);}
+#Cheese{background-image: url(../Multimedia/menu/pastelCheese.jpg);}
+#Choco{background-image: url(../Multimedia/menu/pastelChoco.jpg);}
+#Tira{background-image: url(../Multimedia/menu/pastelTiramisu.jpg);}
+#Bizc{background-image: url(../Multimedia/menu/gallBizc.jpg);}
+#Chispa{background-image: url(../Multimedia/menu/gallChispa.jpeg);}
+#Alfa{background-image: url(../Multimedia/menu/gallAlfajor.jpg);}
+#Butter{background-image: url(../Multimedia/menu/gallButter.jpg);}
+#Cent{background-image: url(../Multimedia/menu/gallCentenario.jpg);}
+#Rosca{background-image: url(../Multimedia/menu/tempRosca.jpg);}
+#Coco{background-image: url(../Multimedia/menu/tempCoco.jpg);}
+#Kab{background-image: url(../Multimedia/menu/tempKabocha.jpg);}
+#Muerto{background-image: url(../Multimedia/menu/tempMuerto.jpg);}
+#Fruta{background-image: url(../Multimedia/menu/tempFrutaSeca.jpg);}
+#Jengi{background-image: url(../Multimedia/menu/tempJengibre.jpeg);}
 
 .menuSection h2
 {
@@ -227,6 +227,6 @@ details ul li a:hover
     text-shadow: transparent;
 }
 
-.mom a:nth-child(1) {background-image: url(../Multimedia/momCake.jpeg);}
-.mom a:nth-child(2) {background-image: url(../Multimedia/momCook.jpg);}
-.mom a:nth-child(3) {background-image: url(../Multimedia/momBread.jpg);}
+.mom a:nth-child(1) {background-image: url(../Multimedia/Menu/momCake.jpeg);}
+.mom a:nth-child(2) {background-image: url(../Multimedia/Menu/momCook.jpg);}
+.mom a:nth-child(3) {background-image: url(../Multimedia/Menu/momBread.jpg);}
