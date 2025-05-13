@@ -1,0 +1,44 @@
+main{
+    padding-top: 10%;
+    padding-left: 3%;
+}
+
+h1 {
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    font-size: 2em;
+    margin: 0.67em 0;
+    font-family: "Prata", serif;
+}
+
+h2{
+    margin-top: 2%;
+    font-size: 1.7em;
+    letter-spacing: 0.5px;
+    font-weight: 550;
+    font-family: "Prata", serif;
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+details{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    padding-left: 2%;
+    border-bottom: 3% #000;
+    margin-bottom: 1%;
+    border-bottom: 1px solid gray;
+    width: 95%;
+}
+
+summary{
+    font-family: "Poppins", sans-serif;
+    margin: 1%;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #ff9134;
+}
+
