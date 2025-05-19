@@ -181,31 +181,6 @@ details ul li a:hover
     text-shadow: 2px 2px 3px #000;
 }
 
-
-#cinnamon{background-image: url(../Multimedia/menu/panRol.jpg);}
-#concha{background-image: url(../Multimedia/menu/panConcha.jpg);}
-#brown{background-image: url(../Multimedia/menu/panBrownie.jpg);}
-#danes{background-image: url(../Multimedia/menu/panDanes.jpg);}
-#croiss{background-image: url(../Multimedia/menu/panCroiss.jpeg);}
-#donut{background-image: url(../Multimedia/menu/panDonut.jpeg);}
-#RV{background-image: url(../Multimedia/menu/pastelRV.jpg);}
-#TresL{background-image: url(../Multimedia/menu/pastelTresL.jpg);}
-#Pay{background-image: url(../Multimedia/menu/pastelPay.jpeg);}
-#Cheese{background-image: url(../Multimedia/menu/pastelCheese.jpg);}
-#Choco{background-image: url(../Multimedia/menu/pastelChoco.jpg);}
-#Tira{background-image: url(../Multimedia/menu/pastelTiramisu.jpg);}
-#Bizc{background-image: url(../Multimedia/menu/gallBizc.jpg);}
-#Chispa{background-image: url(../Multimedia/menu/gallChispa.jpeg);}
-#Alfa{background-image: url(../Multimedia/menu/gallAlfajor.jpg);}
-#Butter{background-image: url(../Multimedia/menu/gallButter.jpg);}
-#Cent{background-image: url(../Multimedia/menu/gallCentenario.jpg);}
-#Rosca{background-image: url(../Multimedia/menu/tempRosca.jpg);}
-#Coco{background-image: url(../Multimedia/menu/tempCoco.jpg);}
-#Kab{background-image: url(../Multimedia/menu/tempKabocha.jpg);}
-#Muerto{background-image: url(../Multimedia/menu/tempMuerto.jpg);}
-#Fruta{background-image: url(../Multimedia/menu/tempFrutaSeca.jpg);}
-#Jengi{background-image: url(../Multimedia/menu/tempJengibre.jpeg);}
-
 .menuSection h2
 {
     margin: 15vh 0 2vh 0;
