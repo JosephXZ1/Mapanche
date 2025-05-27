@@ -308,7 +308,7 @@
     height: 60vh;
     border-radius: 3rem;
     box-sizing: border-box;
-    background-image: url("fondoPrueba.jpg"); /*CAMBIAR CUANDO ESTE LA FOTO*/
+    background-image: url("../Multimedia/Index/team.jpg"); /*CAMBIAR CUANDO ESTE LA FOTO*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
