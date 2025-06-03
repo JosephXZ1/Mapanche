@@ -1,0 +1,43 @@
+{
+    "panes": {
+        "nombre": "Pan dulce",
+        "productos": [
+            {
+                "nombre": "Rol de canela",
+                "id": "cinnamon",
+                "url": "rol.html",
+                "imagen": "../Multimedia/Menu/panRol.jpg"
+            },
+            {
+                "nombre": "Concha",
+                "id": "concha",
+                "url": "concha.html",
+                "imagen": "../Multimedia/Menu/panConcha.jpg"
+            },
+            {
+                "nombre": "Brownie",
+                "id": "brown",
+                "url": "brownie.html",
+                "imagen": "../Multimedia/Menu/panBrownie.jpg"
+            },
+            {
+                "nombre": "Pan Danés",
+                "id": "panDanes",
+                "url": "danes.html",
+                "imagen": "../Multimedia/Menu/panDanes.jpg"
+            },
+            {
+                "nombre": "Crossaint",
+                "id": "crossaint",
+                "url": "crossaint.html",
+                "imagen": "../Multimedia/Menu/panCroiss.jpeg"
+            },
+            {
+                "nombre": "Donas",
+                "id": "donas",
+                "url": "polvoron.html",
+                "imagen": "../Multimedia/Menu/panDonut.jpeg"
+            }
+        ]
+    }
+}
