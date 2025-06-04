@@ -1,0 +1,93 @@
+main
+{
+    top: 19vh;
+    position: relative;
+    width: 100%;
+    padding: 0 5vw;
+    margin-bottom: 40vh;
+}
+
+main h1
+{
+    font-size: 3rem;
+    font-family: "Prata", serif;
+    font-weight: 300;
+}
+
+main p
+{
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+.row
+{
+    margin: 10vh 0;
+    display: flex;
+    width: 100%;
+    height: 65vh;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.cell
+{
+    flex-basis: 33.333%;
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+
+    position: relative;
+    overflow: hidden;
+    /*transition: transform 0.3s ease;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cell p
+{
+    position: relative;
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    z-index: 2;
+}
+
+.cell::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.cell:hover::before, .cell:hover p
+{
+    opacity: 1;
+}
+
+.row .cell:nth-of-type(1){background-image: url("../Multimedia/Menu/special/cake1-1.jpg");}
+.row .cell:nth-of-type(2){background-image: url("../Multimedia/Menu/special/cake2-1.jpg");}
+.row .cell:nth-of-type(3){background-image: url("../Multimedia/Menu/special/cake3-1.jpg");}
+.row:nth-of-type(2) .cell:nth-of-type(1){background-image: url("../Multimedia/Menu/special/bread1-1.jpg");}
+.row:nth-of-type(2) .cell:nth-of-type(2){background-image: url("../Multimedia/Menu/special/bread2-1.jpg");}
+.row:nth-of-type(2) .cell:nth-of-type(3){background-image: url("../Multimedia/Menu/special/bread3-1.jpg");}
+.row:nth-of-type(3) .cell:nth-of-type(1){background-image: url("../Multimedia/Menu/special/cookie1-1.jpg");}
+.row:nth-of-type(3) .cell:nth-of-type(2){background-image: url("../Multimedia/Menu/special/cookie2-1.jpg");}
+.row:nth-of-type(3) .cell:nth-of-type(3){background-image: url("../Multimedia/Menu/special/cookie3-1.jpg");}
