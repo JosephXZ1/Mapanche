@@ -10,17 +10,27 @@ function cargarMenu() {
         })
         .then(data => {
             generarMenu(data.panes.productos, "dulce");
-            
-            // Aquí puedes cargar otros JSON para otras categorías
-            // Ejemplo:
-            // fetch("../json/pasteles.json")
-            //     .then(response => response.json())
-            //     .then(data => generarMenu(data.pasteles.productos, "postre"));
         })
         .catch(error => {
             console.error("Error al cargar el menú:", error);
             mostrarError();
         });
+
+    // Cargar otros menús
+    fetch("../json/pasteles.json")
+        .then(response => response.json())
+        .then(data => generarMenu(data.pasteles.productos, "postre"))
+        .catch(error => console.error("Error al cargar pasteles:", error));
+
+    fetch("../json/galletas.json")
+        .then(response => response.json())
+        .then(data => generarMenu(data.galletas.productos, "gallBiz"))
+        .catch(error => console.error("Error al cargar galletas:", error));
+        
+    fetch("../json/temporada.json")
+        .then(response => response.json())
+        .then(data => generarMenu(data.temporada.productos, "panTemp"))
+        .catch(error => console.error("Error al cargar temporada:", error));
 }
 
 // Función para generar los elementos del menú
@@ -118,17 +128,6 @@ function configurarNavegacion() {
             }
         });
     });
-
-    // Dentro de la función cargarMenu()
-fetch("../json/pasteles.json")
-    .then(response => response.json())
-    .then(data => generarMenu(data.pasteles.productos, "postre"))
-    .catch(error => console.error("Error al cargar pasteles:", error));
-
-fetch("../json/galletas.json")
-    .then(response => response.json())
-    .then(data => generarMenu(data.galletas.productos, "gallBiz"))
-    .catch(error => console.error("Error al cargar galletas:", error));
 }
 
 // Inicializar cuando el DOM esté listo

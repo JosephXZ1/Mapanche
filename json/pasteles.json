@@ -1,0 +1,43 @@
+{
+    "pasteles": {
+        "nombre": "Pasteles",
+        "productos": [
+            {
+                "nombre": "Red-Velvet",
+                "id": "RV",
+                "url": "redVelvet.html",
+                "imagen": "../Multimedia/Menu/pastelRV.jpg"
+            },
+            {
+                "nombre": "Tres Leches",
+                "id": "TresL",
+                "url": "tresLeches.html",
+                "imagen": "../Multimedia/Menu/pastelTresL.jpg"
+            },
+            {
+                "nombre": "Pay de limón",
+                "id": "Pay",
+                "url": "pay.html",
+                "imagen": "../Multimedia/Menu/pastelPay.jpeg"
+            },
+            {
+                "nombre": "Cheesecake",
+                "id": "Cheese",
+                "url": "cheesecake.html",
+                "imagen": "../Multimedia/Menu/pastelCheese.jpg"
+            },
+            {
+                "nombre": "Chocolate",
+                "id": "Choco",
+                "url": "chocolate.html",
+                "imagen": "../Multimedia/Menu/pastelChoco.jpg"
+            },
+            {
+                "nombre": "Tiramisu",
+                "id": "Tira",
+                "url": "tiramisu.html",
+                "imagen": "../Multimedia/Menu/pastelTiramisu.jpg"
+            }
+        ]
+    }
+}

@@ -1,5 +1,6 @@
 /* Contenedor principal Main */
-main {
+main
+{
     top: 19vh;
     align-items: flex-start;
     position: relative;
@@ -7,214 +8,213 @@ main {
     width: 100%;
     padding: 0 1.5vw;
     margin-bottom: 20vh;
-    gap: 2rem;
 }
 
 /* - - - - - - - - - - CONTENEDOR IZQUIERDO DE NAVEGACIÓN - - - - - - - - - - */
-.menuNav {
-    width: 25%;
-    position: sticky;
+.menuNav
+{
+    width: 30%;
+    position: sticky; /* Se mantiene visible al hacer scroll */
     top: 19vh;
-    height: 80vh;
+    height: auto; /* Permite que el contenido crezca según sea necesario */
     overflow-y: auto;
     z-index: 50;
-    padding: 1rem;
 }
 
-.menuNav nav {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-summary {
-    background-color: #fee07c;
+summary
+{
+    background-color: transparent; /* Fondo transparente cuando está cerrado */
     padding: 1rem 1.5rem;
     font-family: "Prata", serif;
     font-size: 1.5rem;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     list-style: none;
     cursor: pointer;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
 }
 
-summary:hover {
-    background-color: #ffd351;
-    border-color: #ca580c;
+summary:hover
+{
+    background-color: #fee07c;
 }
 
-details[open] > summary {
-    border-radius: 20px 20px 0 0;
-    margin-bottom: 0;
+/*Esto es para cuando el details está abierto, mantiene el fondo amarillo */
+details[open] > summary
+{
+    background-color: #fee07c;
 }
 
-details {
-    margin: 0;
-    width: 100%;
+details
+{
+    margin: 0.7rem;
+    width: 15.5vw;
+    overflow: hidden;
+    min-width: 335px;
     border-radius: 20px;
-    background-color: rgba(254, 224, 124, 0.3);
-    transition: all 0.3s ease;
+    transition: background-color 0.4s ease-in-out; /*Transición de apertura y cierre*/
 }
 
-details[open] {
-    background-color: rgba(254, 224, 124, 0.5);
-    padding-bottom: 1rem;
+details[closed]
+{
+    background-color: transparent;
 }
 
-details ul {
-    margin: 0;
-    padding: 0 1rem;
+details[open] 
+{
+    background-color: rgba(254, 224, 124, 0.506);
+    height: 47vh;
+    max-height: 335px;
 }
 
-details ul li {
+details[open]:nth-child(3)
+{
+    height: 41vh;
+    max-height: 292px;
+}
+
+details ul
+{
+    margin: 1rem 1.5rem 0 1rem;
+    padding: 0;
+}
+
+details ul li
+{
     list-style-type: none;
-    margin: 0.5rem 0;
 }
 
-details ul li a {
+details ul li a 
+{   
     text-decoration: none;
     color: #000;
-    font-size: 1.1rem;
-    font-weight: 400;
+    font-size: 1.3rem;
+    font-weight: 300;
     padding: 0.5rem 1rem;
     display: block;
-    border-radius: 10px;
-    transition: all 0.2s ease;
+    transition: color ease-in-out 0.2s;
 }
 
-details ul li a:hover {
+details ul li a:hover
+{
     color: #ca580c;
-    background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* - - - - - - - - - - SECCIÓN DEL MENÚ - - - - - - - - - - */
-.menuSection {
-    width: 75%;
-    padding: 1rem;
+.menuSection
+{
+    margin: 0;
+    width: 70%;
+    height: fit-content;
+    padding: 3vh 3vw 1vh 0;
 }
 
-.menuSection h2 {
+
+.menuSection h2 
+{
     font-family: "Prata", serif;
     font-size: 2.5rem;
     margin: 2rem 0;
-    color: #ca580c;
+    color: #000;
 }
 
-.menuGrid {
+.menuGrid
+{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
     margin-bottom: 3rem;
+    height: 57vh;
 }
 
-.menuItem {
+.menuItem, .mom a
+{
     position: relative;
-    height: 250px;
-    border-radius: 15px;
+    width: 22vw;
+    height: 100%;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.menuItem:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
+.menuItem:first-of-type{border-radius: 1.5rem 0 0 0;}
+.menuItem:nth-of-type(3){border-radius: 0 1.5rem 0 0;}
+.menuItem:nth-of-type(4){border-radius: 0 0 0 1.5rem;}
+.menuItem:last-of-type{border-radius: 0 0 1.5rem 0;}
 
-.menuItem::before {
+.menuItem::before, .mom a::before
+{
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.menuItem:hover::before {
+.menuItem:hover::before, .menuItem.focused::before, .mom a:hover::before
+{
     opacity: 1;
 }
 
-.menuItem img {
+.menuItem img
+{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
 }
 
-.menuItem:hover img {
-    transform: scale(1.05);
-}
-
-.menuItem p {
+.menuItem p, .mom a p
+{
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    display: block;
     padding: 1rem;
     margin: 0;
-    color: white;
-    font-size: 1.5rem;
+    color: transparent;
+    font-size: 1.7vw;
     font-weight: 500;
     text-align: center;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 3px transparent;
     z-index: 1;
 }
 
-.menuItem:hover p {
-    transform: translateY(0);
+.menuItem:hover p, .cell.focused p, .mom a:hover p
+{
+    color: #fff;
+    text-shadow: 2px 2px 3px #000;
 }
 
 /* Especialidades del mes */
-.mom {
+.mom
+{
+    margin: 0 0 15vh 0 ;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin: 3rem 0;
-}
-
-.mom a {
-    position: relative;
-    height: 300px;
-    border-radius: 15px;
+    height: 65vh;
+    max-height: 530px;
+    border-radius: 1.5rem;
     overflow: hidden;
 }
 
-.mom a p {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem;
-    margin: 0;
-    color: white;
-    font-size: 1.8rem;
-    font-weight: 500;
-    text-align: center;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-    z-index: 1;
-    transition: all 0.3s ease;
+.mom a
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.mom a:hover p {
-    transform: scale(1.05);
+.mom a p
+{
+    font-size: 3vw;
+    text-shadow: transparent;
 }
 
-/* Efecto de enfoque para celdas seleccionadas */
-.cell.focused {
-    outline: 4px solid #ca580c;
-    outline-offset: -4px;
-}
-
-.cell.focused::before {
-    opacity: 1;
-}
-
-.cell.focused p {
-    transform: translateY(0);
-}
+.mom a:nth-child(1) {background-image: url(../Multimedia/Menu/momCake.jpeg);}
+.mom a:nth-child(2) {background-image: url(../Multimedia/Menu/momCook.jpg);}
+.mom a:nth-child(3) {background-image: url(../Multimedia/Menu/momBread.jpg);}

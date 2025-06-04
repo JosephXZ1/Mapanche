@@ -1,12 +1,12 @@
 {
-    "panes": {
-        "nombre": "Pan dulce",
+    "temporada": {
+        "nombre": "Pan de temporada",
         "productos": [
             {
-                "nombre": "Rol de canela",
-                "id": "cinnamon",
-                "url": "rol.html",
-                "imagen": "../Multimedia/Menu/panRol.jpg"
+                "nombre": "Rosca",
+                "id": "Rosca",
+                "url": "rosca.html",
+                "imagen": "../Multimedia/Menu/tempRosca.jpg"
             },
             {
                 "nombre": "Concha",
@@ -35,7 +35,7 @@
             {
                 "nombre": "Donas",
                 "id": "donut",
-                "url": "dona.html",
+                "url": "polvoron.html",
                 "imagen": "../Multimedia/Menu/panDonut.jpeg"
             }
         ]

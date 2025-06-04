@@ -1,0 +1,37 @@
+{
+    "galletas": {
+        "nombre": "Galletas y bizcochos",
+        "productos": [
+            {
+                "nombre": "Bizcocho",
+                "id": "Bizc",
+                "url": "bizcocho.html",
+                "imagen": "../Multimedia/Menu/gallBizc.jpg"
+            },
+            {
+                "nombre": "Chispa de chocolate",
+                "id": "Chispa",
+                "url": "chispas.html",
+                "imagen": "../Multimedia/Menu/gallChispa.jpeg"
+            },
+            {
+                "nombre": "Alfajores",
+                "id": "Alfa",
+                "url": "alfajor.html",
+                "imagen": "../Multimedia/Menu/gallAlfajor.jpg"
+            },
+            {
+                "nombre": "Mantequilla",
+                "id": "Butter",
+                "url": "mantequilla.html",
+                "imagen": "../Multimedia/Menu/gallButter.jpg"
+            },
+            {
+                "nombre": "Centenario",
+                "id": "Cent",
+                "url": "centenario.html",
+                "imagen": "../Multimedia/Menu/gallCentenario.jpg"
+            }
+        ]
+    }
+}
